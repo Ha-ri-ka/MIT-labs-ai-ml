@@ -1,3 +1,10 @@
+// Write a program to construct a binary tree to support the following operations. 
+//   Assume no duplicate elements while constructing the tree. 
+//  i. Given a key, perform a search in the binary search tree. If the key is found 
+// then display “key found” else insert the key in the binary search tree. 
+//  ii. Display the tree using inorder, preorder and post order traversal methods 
+
+
 #include<stdio.h>
 #include<stdlib.h>
 //-----------------------

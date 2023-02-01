@@ -4,7 +4,6 @@
 // then display “key found” else insert the key in the binary search tree. 
 //  ii. Display the tree using inorder, preorder and post order traversal methods 
 
-
 #include<stdio.h>
 #include<stdlib.h>
 //-----------------------

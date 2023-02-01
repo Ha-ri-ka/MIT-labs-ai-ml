@@ -3,7 +3,6 @@
 //  i. Given a key, perform a search in the binary search tree. If the key is found 
 // then display “key found” else insert the key in the binary search tree. 
 //  ii. Display the tree using inorder, preorder and post order traversal methods 
-
 #include<stdio.h>
 #include<stdlib.h>
 //-----------------------
@@ -53,91 +52,73 @@ void postorder(struct node* root)
     }
 }
 //-----------------------
-struct node* create_bst(struct node*root,int ele)
- {
-    if(root==NULL)
-    {
-        root=getnode(ele);
-        return root;
-    }
-    else
-    {
-        if (ele < root->value) 
-            root->left = create_bst(root->left, ele); 
-        else if(ele>root->value) 
-            root->right=create_bst(root->right,ele); 
-        else 
-            printf("duplicates not allowed\n");
-    }
-    return root;
- }
+struct node* create_tree()
+{
+    struct node*newnode; int d;
+    newnode=(struct node*)malloc(sizeof(struct node));
+    scanf("%d",&d);
+    if(d==-1)
+    return NULL;
+    newnode->value=d;
+    printf("enter left of %d:",newnode->value);
+    newnode->left=create_tree();
+    printf("enter right of %d:",newnode->value);
+    newnode->right=create_tree();
+    return newnode;
+}
  //-----------------------
- struct node * search(struct node * root,int key)
+ int search(struct node *root,int key)
 {
     if(root==NULL)
-    return NULL;
+    return 0;
     if(root->value==key)
-    return root;
-    else if(root->value>key)
-    return (search(root->left,key)); 
-    else
-    return(search(root->right,key)); 
+    return 1;
+    if(search(root->left,key)||search(root->right,key))
+    return 1;
 }
 //-----------------------
-struct node* insert(struct node *root,int key)
+struct node *insert(struct node*root,int key,int p)
 {
-    struct node*prev=NULL;
-    struct node*temp=root;
-    while(temp)
+    struct node *new=(struct node*)malloc(sizeof(struct node));
+    new->value=key;
+    new->left=new->right=NULL;
+    struct node *temp=root;
+    if(p==1)
     {
-        prev=temp;
-        if(key< temp->value)
+        while(temp->left!=NULL)
         temp=temp->left;
-        else
-        temp=temp->right;
+        temp->left=new;
     }
-    struct node*new=getnode(key);
-    if(key<prev->value)
-    prev->left=new;
     else
-    prev->right=new;
-    return(root);
+    {
+        while(temp->right!=NULL)
+        temp=temp->right;
+        temp->right=new;
+    }
+    return root;
 }
 //-----------------------
 void main()
 {
     struct node *root=NULL;
-    int ch,ele,key;
-    printf("enter 1 to start or continue creating tree,enter -1 to stop at any time.");
-    printf("enter choice:"); scanf("%d",&ch);
-    if(ch!=-1)
-    {
-    do
-    {
-            printf("enter data: ");
-            scanf("%d", &ele);
-            root = create_bst(root, ele);
-            printf("enter choice: ");
-            scanf("%d", &ch);
-    } while (ch != -1);
-    }
-    else
-    exit(0);
-    
-    printf("preorder traversal:\n"); preorder(root);
-    printf("\ninorder traversal:\n"); inorder(root);
-    printf("\npost order traversal:\n"); postorder(root);
-    
-    printf("\nenter element to search for:");
+    int ch,ele,key,res,p;
+    printf("enter head node to start creating tree,enter -1 to stop at any time.");
+    root=create_tree(); 
+    printf("enter element to search for:");
     scanf("%d",&key);
-    struct node *keynode=search(root,key);
-    if(keynode==NULL)
+    res=search(root,key);
+    if(res==0)
     {
-        root=insert(root,key);
+        printf("element doesnt exist in tree.Which subtree would u like to insert in?(L->1 or R->0):");
+        scanf("%d",&p);
+        root=insert(root,key,p);
         printf("The element %d is added to the tree.",key);
         printf("The new tree is:\n");
         inorder(root);
     }
     else
-    printf("%d exists in the tree",keynode->value);
+    printf("%d exists in the tree",key);
+    printf("\npreorder traversal:\n"); preorder(root);
+    printf("\ninorder traversal:\n"); inorder(root);
+    printf("\npost order traversal:\n"); postorder(root);
 }

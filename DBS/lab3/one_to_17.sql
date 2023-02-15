@@ -23,10 +23,10 @@
 12. select dept_name from department where budget < all(select avg(salary) from instructor); 
 
 13. SELECT course_id FROM section S1 WHERE semester = 'Fall' AND year = 2009 AND EXISTS
-    (SELECT course_id FROM section S2 WHERE semester = 'Spring' and year = 2010 and S1.course_id=S2.course_id);
+   (SELECT course_id FROM section S2 WHERE semester = 'Spring' and year = 2010 and S1.course_id=S2.course_id);
     
 14.SELECT DISTINCT S.ID, S.name FROM student S WHERE NOT EXISTS((SELECT course_id FROM course WHERE dept_name = 'Biology') 
-EXCEPT(SELECT T.course_id FROM takes T WHERE S.ID = T.ID));
+   EXCEPT(SELECT T.course_id FROM takes T WHERE S.ID = T.ID));
 
 15.SELECT course.course_id from course WHERE UNIQUE(SELECT section.course_id FROM section WHERE course.course_id = section.course_id AND section.year = 2009);
 

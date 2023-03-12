@@ -12,7 +12,7 @@ join takes on course.course_id=takes.course_id where takes.id=12345;
 
 14. select id,name from instructor where ID not in (select id from teaches);
 
-15.
+15. coming soon
 
 16. select student.name,takes.course_id from student
     join takes on student.id=takes.id where takes.year=2010;
@@ -28,7 +28,7 @@ join takes on course.course_id=takes.course_id where takes.id=12345;
 
 21. select UPPER(name)name from instructor;
 
-22.
+22. coming soon
 
 23. select salary,ROUND(salary/3) from instructor;
 

@@ -1,6 +1,5 @@
 SET SERVEROUTPUT ON;
 declare
-invalid_gpa EXCEPTION;
 score numeric(2,1);
 grade varchar(2);
 i integer:=1;
@@ -19,15 +18,11 @@ elsif score<=8 then
 grade:='B';
 elsif score<=9 then
 grade:='A';
-elsif score<=10 then
-grade:='A+';
 else
-RAISE invalid_gpa;
+grade:='A+';
 end if;
 update studenttable set lettergrade=grade where rollno=i;
 i:=i+1;
 end loop;
-EXCEPTION when invalid_gpa then
-dbms_output.put_line('student has invalid gpa in record');
 end;
 /

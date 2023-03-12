@@ -1,3 +1,5 @@
+8. coming soon
+
 9. select name,dept_name from student;
 
 10.  select name from instructor

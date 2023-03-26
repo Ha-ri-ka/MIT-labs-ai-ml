@@ -34,7 +34,7 @@ node *create_bst(node *root, int ele)
         else if (ele > root->data)
             root->right = create_bst(root->right, ele);
         else
-            printf("no duplicates allowed");
+            printf("no duplicates allowed\n");
     }
     return root;
 }
@@ -116,5 +116,13 @@ void main()
         preorder(root);
         printf("\npostorder traversal:\n");
         postorder(root);
+        exit(0);
     }
+    printf("\ntraversals of tree:\n");
+    printf("\ninorder traversal:\n");
+        inorder(root);
+        printf("\npreorder traversal:\n");
+        preorder(root);
+        printf("\npostorder traversal:\n");
+        postorder(root);
 }

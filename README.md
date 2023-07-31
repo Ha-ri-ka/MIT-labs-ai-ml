@@ -7,4 +7,3 @@ CONSISTS:
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;PARALLEL COMPUTING LAB (C)  
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;MACHINE LEARNING LAB (PYTHON)  
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;COMPUTER VISION LAB (PYTHON)  
-	

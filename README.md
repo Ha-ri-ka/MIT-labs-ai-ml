@@ -4,6 +4,6 @@ CONSISTS:
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;DATABASE SYSTEMS (SQL)  
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;ALGORITHMS (C)                                       
 &ensp;&ensp;&ensp;&ensp;5TH SEMESTER LABS:  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;PARALLEL COMPUTING LAB (C)  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;MACHINE LEARNING LAB (PYTHON)  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;COMPUTER VISION LAB (PYTHON)  
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;PARALLEL COMPUTING (C)  
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;MACHINE LEARNING (PYTHON)  
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;COMPUTER VISION (PYTHON)  

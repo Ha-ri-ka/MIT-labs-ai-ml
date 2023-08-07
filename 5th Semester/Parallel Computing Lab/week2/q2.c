@@ -21,4 +21,5 @@ int main(int argc,char *argv[])
 		MPI_Recv(&num,1,MPI_INT,0,0,MPI_COMM_WORLD,&status);
 		printf("%d received in process %d\n",num,rank);
 	}
+	MPI_Finalize();
 }

@@ -22,4 +22,5 @@ int main(int argc,char *argv[])
 		printf("%d received in process %d\n",num,rank);
 	}
 	MPI_Finalize();
+	return 0;
 }

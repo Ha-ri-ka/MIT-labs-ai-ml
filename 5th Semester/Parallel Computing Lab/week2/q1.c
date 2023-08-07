@@ -2,30 +2,12 @@
 #include<stdio.h>
 #include<string.h>
 
-char* toggleWord(char string[])
-{
-	int i;
-	for(i=0;i<strlen(string);i++)
-	{
-		if(string[i]>=97 && string[i]<=122)
-		{
-			string[i]-=32;
-		}
-
-	else if (string[i]>=65 && string[i]<=90)
-		{
-			string[i]+=32;
-		}
-	}
-	return string;
-}
-
 int main(int argc,char *argv[])
 {
 	int rank,size,len,i;
 	MPI_Status status;
 	char word[50];
-	char *toggled;
+	
 	MPI_Init(&argc,&argv);
 	MPI_Comm_rank(MPI_COMM_WORLD,&rank);
 	if(rank==0)

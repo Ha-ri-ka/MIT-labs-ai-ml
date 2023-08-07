@@ -24,7 +24,7 @@ int main(int argc,char *argv[])
 	{
 		MPI_Recv(&len,1,MPI_INT,0,0,MPI_COMM_WORLD,&status);
 		MPI_Recv(&word,len,MPI_CHAR,0,1,MPI_COMM_WORLD,&status);
-		printf("%s received from process0 in process1",word);		
+		printf("\n%s received from process0 in process1",word);		
 		for(int i=0;i<strlen(word);i++)
 		{
 		if(word[i]>=97 && word[i]<=122)

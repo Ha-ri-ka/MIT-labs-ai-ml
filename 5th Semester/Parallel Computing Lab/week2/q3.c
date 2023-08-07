@@ -38,4 +38,5 @@ int main(int argc,char *argv[])
 		}
 	MPI_Buffer_detach(buffer,&buffer_size);
 	MPI_Finalize();
+	return 0;
 }

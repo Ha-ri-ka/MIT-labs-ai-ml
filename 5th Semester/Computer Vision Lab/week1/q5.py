@@ -1,7 +1,7 @@
 import cv2 as cv
 def rescaleFrame(frame,scale=2):
-    w=(frame.shape[1]*scale)
-    h= (frame.shape[0] * scale)
+    w=int(frame.shape[1]*scale)
+    h=int(frame.shape[0] * scale)
     dim=(w,h)
     return cv.resize(frame,dim)
 

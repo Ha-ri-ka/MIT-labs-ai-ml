@@ -3,8 +3,8 @@ import numpy as np
 
 img=cv.imread('C:/Users/OSLAB/Downloads/OIP.jpg')
 b,g,r=cv.split(img)
-#print(b)
-#cv.imshow('b vg',b)
+#img.shape-->has 3 dimensions: width,height and num of channels.
+#b.shape only has 2 dimensions as it is a single channel image.
 blank=np.zeros(b.shape,dtype='uint8')
 
 red_img=cv.merge((blank,blank,r))

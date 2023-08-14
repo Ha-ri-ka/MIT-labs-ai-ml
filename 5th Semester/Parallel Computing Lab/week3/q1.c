@@ -38,13 +38,9 @@ int main(int argc,char * argv[])
 		for(int i=0;i<n;i++)
 			{
 				printf("%d ",factorials[i]);
+				sum+=factorials[i];
 			}
-			
-			for(int i=0;i<n;i++)
-			 {
-			   sum+=factorials[i];
-			 }
-			 printf("\nsum of factorials=%d",sum);  
+		printf("\nsum of factorials=%d",sum);  
 	}
 	MPI_Finalize();
 	return 0;

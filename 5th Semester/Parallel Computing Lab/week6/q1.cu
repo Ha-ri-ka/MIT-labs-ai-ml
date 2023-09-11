@@ -33,9 +33,9 @@ int main()
     count=(unsigned int*)malloc(sizeof(unsigned int));
     result=(unsigned int*)malloc(sizeof(unsigned int));
     printf("enter the string: ");
-    scanf("%s",A);
+    scanf("%[^\n]s",A);
     printf("enter substring: ");
-    scanf("%s",sub);
+    scanf("%[^\n]s",sub);
 
     cudaEvent_t start, stop;
     cudaEventCreate(&start);

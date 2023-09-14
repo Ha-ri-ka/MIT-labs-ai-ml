@@ -1,6 +1,6 @@
 import cv2 as cv
 import numpy as np
-path="D:/labs/CV/images/skelly.png"
+path="images/skelly.png"
 img=cv.imread(path)
 laplace=cv.Laplacian(img,cv.CV_64F)
 sharpened = cv.convertScaleAbs(laplace)

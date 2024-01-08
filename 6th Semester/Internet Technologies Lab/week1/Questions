@@ -1,0 +1,58 @@
+9. Specifying headings of the content and inserting paragraphs
+of text content :
+ Headings – h1 to h6
+ Paragraphs and line breaks
+ Text formatting
+ Preformatted text
+ Marking deleted and inserted text
+ Setting text direction of an element
+ Usage of div and span tags
+10.
+Creating links to other HTML documents or Web
+resources :
+ Create hyperlinks
+ Using image as a Link
+ Open link in a new browser window
+ Navigate inside page
+11.
+Inserting images into the HTML document :
+ Setting width and height of the images
+ Aligning images
+ Make a hyperlink of an image
+ Creating an image – map ( An image with clickable
+regions)
+12.
+Creating a simple table :
+ Setting the dimension of a table
+ Specify the table caption
+ Tables with borders
+ Using cell padding, cell spacing, row span, column span
+attributes
+13.
+Making your own lists :
+ Unordered, Ordered and definition list
+14.
+Creating a simple form :
+ Using Text input field
+ Creating password input field
+ Checkboxes and radio buttons
+ Drop down list
+ Select box with preselected value
+ Text area
+ Creating buttons ( Show the usage of submit and reset
+buttons )
+ Grouping similar form fields
+15.
+Making the HTML5 page more stylish using CSS
+ Using inline style - style attribute
+ Using embedded style
+ Link to an external style sheet – Link element
+16.
+HTML5 Canvas
+ Embedding canvas into an HTML document
+ Drawing a line, circle, rectangle, arc onto the canvas
+ Filling the colour into shapes on canvas Filling linear and radial gradient inside canvas shapes
+ Setting the stroke colour and width on canvas.
+ADDITIONAL EXERCISE:
+ Design a basic webpage of your interest using all the HTML5
+elements.

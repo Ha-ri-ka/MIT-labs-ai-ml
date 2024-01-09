@@ -8,7 +8,7 @@ print('\nreshaped tensor:',torch.reshape(tens,(1,6)))
 
 #view
 view_tens=tens.view_as(tens)
-#print(view_tens)
+print('\nView of original tensor:\n',view_tens)
 
 #stack
 print('\nStacking')
@@ -20,3 +20,17 @@ print('tens2 upon tens1:\n',stacked)
 stacked=torch.stack([tens1,tens2])
 print('tens1 upon tens2:\n',stacked)
 
+print('\nSqueezing')
+x = torch.ones(size=(1, 3, 1, 4),dtype=int)
+squeezed_tensor = torch.squeeze(x)
+print("Original Tensor:")
+print(x)
+print("Squeezed Tensor:")
+print(squeezed_tensor)
+
+print('\nUnsqueezing')
+print("Squeezed Tensor:")
+print(squeezed_tensor)
+unsqueezed_tensor = torch.unsqueeze(x, dim=0)
+print("Unsqueezing Tensor by adding singleton dimension at index 0:")
+print(unsqueezed_tensor)

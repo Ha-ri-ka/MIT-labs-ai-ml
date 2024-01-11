@@ -4,14 +4,43 @@
     <title>Q2</title>
     <style>
         .pfp{
-          height: 80px;
-          width: 80px;
+          height: 500px;
+          width: 600px;
+        }
+        body{
+            padding-bottom: 1000px;
+        }
+        .bottom-of-page{
+            position: absolute;
+            bottom: 0;
+            top:1000px;
+        }
+        .top-of-page{
+            position: absolute;
+            bottom: 1000px;
+            top:0px;
         }
     </style>
   </head>
   <body>
-    <a href="https://github.com/Ha-ri-ka">Link to my github [opens in same window]</a>
-    <p></p>
-    <a href="https://github.com/Ha-ri-ka" ><img src="118831413.jpeg" class="pfp" alt="link to github"></a>
+    <section id="top-of-page" class="top-of-page"></section>
+
+    <a href="https://github.com/Ha-ri-ka"><h1>Link to my github [opens in same tab]</h1></a>
+    <br><br>
+
+    <a href="https://github.com/Ha-ri-ka" target=_blank><img src="6.jpg" class="pfp" alt="link to github" ></a>
+    <br><br>
+    
+    <a href="https://github.com/Ha-ri-ka" target=_blank><h1>Link to my github [opens in different tab] </h1></a>
+
+    <nav>
+        <a href="#bottom-of-page">Go to bottom of page</a>
+    </nav>
+
+    <section id="bottom-of-page" class="bottom-of-page">
+        <nav>
+            <a href="#top-of-page">Go to top of page</a>
+        </nav>
+    </section>
   </body>
 </html>

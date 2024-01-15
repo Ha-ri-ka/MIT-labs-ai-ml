@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q6-simple form</title>
+    <style>
+        div{
+            margin: 10px;
+            margin-top: 15px;
+        }
+        input{
+            margin-top: 5px;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="name">
+            <label for="name">Enter Your Name</label><br>
+            <input type="text" id="name" placeholder="Name"><br>
+        </div>
+        <div class="num">
+            <label for="number">Enter Your Number</label><br>
+            <input type="number" id="number" placeholder="number"><br>
+        </div>
+        <div class="student">
+            <p>Are you a student?</p>
+            <input type="radio" id="yes" name="student">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="student">
+            <label for="no">No</label>
+        </div>
+        <div class="college">
+            <label for="college">Select Your college</label>
+            <select id="college" name="college">
+                <option>--colleges--</option>
+                <option>MIT</option>
+                <option>MIC</option>
+                <option>KMC</option>
+            </select>
+        </div>
+        <div class="subjects">
+            <p>Select the subjects in your curriculum</p>
+            <input type="checkbox" id="ml" name="subject">
+            <label for="ml">Machine Learning</label>
+            <input type="checkbox" id="dl" name="subject">
+            <label for="ml">Deep Learning</label>
+            <input type="checkbox" id="ann" name="subject">
+            <label for="ml">Artificial Neural Networks</label>
+            <input type="checkbox" id="other" name="subject">
+            <label for="other">Other</label>
+        </div>
+        <div class="pw">
+            <label for="password">Enter Your Password</label><br>
+            <input type="password" id="password">
+        </div>
+    </form>
+</body>
+</html>

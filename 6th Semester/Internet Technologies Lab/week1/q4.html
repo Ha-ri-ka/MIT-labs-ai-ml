@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q4-tables</title>
+    <style>
+        table,th,td{
+            border:0.5px solid rgb(190, 21, 49);
+            border-spacing: 0px;
+        }
+        table{
+            width: 300px;
+        }
+        caption{
+            margin-bottom: 15px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>This is a table</caption>
+        <tr>
+            <th>Column1</th>
+            <th>Column2</th>
+        </tr>
+        <tr>
+            <td colspan="2">span over 2 columns</td>
+            <td>data 0,1</td>
+        </tr>
+        <tr>
+            <td>data 1,0</td>
+            <td rowspan="2">span over 2 rows</td>
+        </tr>
+        <tr>
+            <td>data 2,0</td>
+            <td>data 2,1</td>
+        </tr>
+        <tr>
+            <td>data 3,0</td>
+            <td>data 3,1</td>
+        </tr>
+    </table>
+</body>
+</html>

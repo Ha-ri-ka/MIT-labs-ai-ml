@@ -10,13 +10,26 @@
         input{
             margin-top: 5px;
         }
-        p{
+        label,p{
             margin-bottom: 5px;
+            font-size: 20px;
+        }
+        textarea{
+            width: 500px;
+            height: 50px;
+            margin: 10px;
+        }
+        .buttons{
+            width: 80px;
+            height: 30px;
+            margin: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <form>
+    <textarea form="student-info">This is a form curated by a student of computer science in manipal institute of technology as an exercise to learn html and eventually webdev. Wish her luck and send her any suggestions to imporve, or flowers :).</textarea>
+    <form id="student-info">
         <div class="name">
             <label for="name">Enter Your Name</label><br>
             <input type="text" id="name" placeholder="Name"><br>
@@ -52,10 +65,19 @@
             <input type="checkbox" id="other" name="subject">
             <label for="other">Other</label>
         </div>
+        <div class="library">
+            <p>Do you have a library card?</p>
+            <input type="radio" id="yes" name="library" checked>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="library">
+            <label for="no">No</label>
+        </div>
         <div class="pw">
             <label for="password">Enter Your Password</label><br>
             <input type="password" id="password">
         </div>
+        <input type="submit" value="Submit" class="buttons">
+        <input type="reset" value="Reset" class="buttons">
     </form>
 </body>
 </html>

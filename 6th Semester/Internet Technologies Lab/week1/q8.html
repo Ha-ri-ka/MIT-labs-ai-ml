@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q8-html canvas</title>
+  <style>
+    p{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .shapes-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .shape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .my-canvas{
+        width: 200px;
+        height: 100px; 
+        border: 1px solid #b011a0;
+    }
+  </style>
+</head>
+<body>
+    <h1>BASIC SHAPES USING CANVAS</h1>
+    <div class="shapes-container">
+        <div class="shape">
+            <p>Line</p>
+            <canvas id="lineCanvas" class="my-canvas"></canvas>
+        </div>
+        <div class="shape">
+            <p>Circle with radial gradient</p>
+            <canvas id="circleCanvas" class="my-canvas"></canvas>
+        </div>
+        <div class="shape">
+            <p>Rectangle with linear gradient</p>
+            <canvas id="rectCanvas" class="my-canvas"></canvas>
+        </div>
+        <div class="shape">
+            <p>Arc with solid color</p>
+            <canvas id="arcCanvas" class="my-canvas"></canvas>
+        </div>
+    </div>
+    <script>
+        var canvasList=["lineCanvas","circleCanvas","rectCanvas","arcCanvas"]
+        for (var i = 0; i < canvasList.length; i++)
+        {
+            var c = document.getElementById(canvasList[i]);
+            var ctx = c.getContext("2d");
+            ctx.strokeStyle = "blue";
+            ctx.lineWidth = 5;
+            if(canvasList[i]=="lineCanvas"){
+                ctx.moveTo(0, 0);
+                ctx.lineTo(400, 200);
+                ctx.stroke();
+            }
+            else if(canvasList[i]=="circleCanvas"){
+                var gradient = ctx.createRadialGradient(150, 75, 0, 150, 75, 70);
+                gradient.addColorStop(0, "red");
+                gradient.addColorStop(1, "white"); 
+                ctx.beginPath();
+                ctx.arc(150, 75, 70, 0, 2 * Math.PI);
+                ctx.fillStyle = gradient;
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+            }
+            else if(canvasList[i]=="rectCanvas"){
+                ctx.moveTo(25, 25);
+                ctx.lineTo(275, 25);
+                ctx.lineTo(275, 125);
+                ctx.lineTo(25, 125);
+                ctx.lineTo(25, 25);
+                ctx.stroke();
+
+                var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                grd.addColorStop(0, "red");
+                grd.addColorStop(1, "white");
+                ctx.fillStyle = grd;
+                ctx.fillRect(25, 25, 250, 100);
+            }
+            else if(canvasList[i]=="arcCanvas")
+            {
+                ctx.fillStyle = "blue"; 
+                ctx.fillRect(0, 0, 400, 65);
+                ctx.beginPath();
+                ctx.arc(150, 75, 70, 0, Math.PI);
+                ctx.stroke();
+            }
+        }
+  </script>
+</body>
+</html>

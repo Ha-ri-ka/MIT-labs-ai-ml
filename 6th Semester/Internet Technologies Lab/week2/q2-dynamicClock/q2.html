@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q2-Good day</title>
+  <link href="q2.css" rel="stylesheet"> 
+</head>
+<body>
+  <div class="overlay">
+  <div class="container">
+  <div class="clock">
+      <div class="number ">
+        <span class="hours">00</span>
+      </div>
+      
+      <div class="division">
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+
+      <div class="number">
+        <span class="minutes">00</span>
+      </div>
+
+      <div class="division">
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+      <div class="number ">
+        <span class="seconds">00</span>
+      </div>
+      <div class="ampm">
+        <span class="am-pm">00</span>
+      </div>
+  </div>
+</div>
+</div>
+  <script>
+    var today = new Date();
+    var hour=today.getHours();
+    var minutes=today.getMinutes();
+    var seconds=today.getSeconds();
+    if(hour>=5 && hour<12)
+    {
+      alert("Good morning!");
+    }
+    else if(hour>=12 && hour<=16)
+    {
+      alert("Good afternoon!");
+    }
+    else if(hour>16 && hour<=23 || hour>=0 && hour<5)
+    {
+      alert("Good night!");
+    }
+    setInterval(()=>{
+      var today = new Date();
+      hour=today.getHours();
+      minutes=today.getMinutes();
+      seconds=today.getSeconds();
+      let x=hour>12?"PM":"AM";
+      hour = hour > 12 ? hour - 12 : hour; 
+      hour = hour == 0 ? hour = 12 : hour;
+      document.querySelector(".hours").innerText = hour;
+      document.querySelector(".minutes").innerText = minutes;
+      document.querySelector(".seconds").innerText = seconds;
+      document.querySelector(".am-pm").innerText = x;
+      }, 1000);
+  </script>
+</body>
+</html>

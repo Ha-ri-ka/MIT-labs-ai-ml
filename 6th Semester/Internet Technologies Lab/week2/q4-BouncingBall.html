@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q4-Bouncing Ball</title>
+  <style>
+    body {
+        display: flex;              
+        justify-content: center; 
+        background-color: rgb(235, 101, 208);
+    }
+    @keyframes bounce {
+        from { transform: translate3d(0, 50px, 0);  }
+        to   { transform: translate3d(0, 350px, 0); }
+    }
+    .ball{
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        border: 5px solid rgb(215, 10, 147);
+        background-color: rgb(171, 54, 226);
+        top: 50px;
+        
+        animation: bounce 0.8s;
+        animation-direction: alternate;
+        animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+        animation-iteration-count: infinite;
+    }   
+  </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

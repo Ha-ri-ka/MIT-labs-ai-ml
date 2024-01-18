@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q1-Get element position</title>
+  <style>
+        .images{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        }
+        .img{
+            height: 400px;
+            width: 300px;
+        }  
+        .output{
+            font-size: 50px;
+            text-align: center;
+        } 
+  </style>
+</head>
+<body>
+    <div class="images">
+        <img src="https://i.pinimg.com/564x/a7/47/2f/a7472fa9d0ee3ee58bedbf031157cfee.jpg" class="img img1"  onclick="getCoord('.img1')">
+        <img src="https://i.pinimg.com/564x/69/11/f8/6911f8c3bd3195887cbaf07d4ea65679.jpg" class="img img2"  onclick="getCoord('.img2')">
+        <img src="https://i.pinimg.com/564x/8a/6f/e6/8a6fe684cce52784835cd1e82ef1a41a.jpg" class="img img3"  onclick="getCoord('.img3')">
+    </div>
+    <p class="output">Click image to get coordinates</p>
+  <script>
+        function getCoord(className) {
+            let target = document.querySelector(className);
+            let output = document.querySelector(".output");
+ 
+            output.innerHTML ="Co-ordinate of the image:" +" (" + target.offsetLeft + ", " + target.offsetTop + ")";
+        }
+  </script>
+</body>
+</html>

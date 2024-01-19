@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Divs Along the Top with Random X Positions</title>
+    <style>
+        /* Styling for the dynamic divs */
+        .dynamicDiv {
+            position: absolute;
+            width:  10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            animation: moveAnimation 5s linear infinite;
+        }
+        @keyframes moveAnimation {
+            to {
+                top: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    // JavaScript code to create and set positions for divs along the top with random X positions
+    function createAndSetRandomXPositions() {
+        // Number of divs to create
+        var numberOfDivs = 20;
+
+        for (var i = 0; i < numberOfDivs; i++) {
+            // Create dynamic div
+            var dynamicDiv = document.createElement("div");
+            dynamicDiv.className = "dynamicDiv";
+
+            // Set Y position to the top of the screen
+            var positionAlongTop = 0;
+            dynamicDiv.style.top = positionAlongTop + "px";
+
+            // Set random X positions
+            var randomX = Math.floor(Math.random() * window.innerWidth);
+            dynamicDiv.style.left = randomX + "px";
+
+            // Append dynamic div to the document
+            document.body.appendChild(dynamicDiv);
+        }
+    }
+
+    // Call the function to create and set random X positions along the top for divs
+    createAndSetRandomXPositions();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"boiler plate for html": {
+		"prefix": "htmlboil",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html>",
+			"<head>",
+				"\t<title>$1</title>",
+				"\t<style></style>"
+			"</head>",
+			"<body>",
+				"\t<script></script>",
+			"</body>",
+			"</html>"
+		],
+	},
+	"boiler plate for jQuery": {
+		"prefix": "jqboil",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html>",
+			"<head>",
+				"\t<title>$1</title>",
+				"\t<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>",
+				"\t<script type='text/javascript' src='jquery-3.7.1.js'></script>",
+				"\t<script type='text/javascript' language='javascript'></script>",
+				"\t<style></style>"
+			"</head>",
+			"\t<body>",
+			"\t</body>",
+			"</html>"
+		],
+	}
+}

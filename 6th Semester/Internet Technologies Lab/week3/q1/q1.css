@@ -1,0 +1,28 @@
+table,th,td{
+    border:0.5px solid rgb(190, 21, 49);
+    border-spacing: 0px;
+}
+table{
+    width: 300px;
+    margin: 30px;
+}
+p{
+    display: inline-block;
+}
+button{
+    width: 60px;
+    height: 30px;
+    font-size: 18px;
+    background-color: pink;
+    border-radius: 10px;
+}
+.pic{
+    width: 250px;
+    height: 150px;
+    margin: 30px;
+}
+.container{
+    position: absolute;
+    margin-left: 0px;
+    display: flex;
+}

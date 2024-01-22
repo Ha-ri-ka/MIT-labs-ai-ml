@@ -1,0 +1,44 @@
+<!-- Write a web page which contains table with 3 X 3 dimensions (fill some data) and one
+image. Style the rows with alternate color. Move the table and image together from
+right to left when button is clicked. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q1-Table and Image.</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <script type='text/javascript' src='jquery-3.7.1.js'></script>
+    <script src="q1.js"></script>
+    <link rel="stylesheet" href="q1.css">
+</head>
+    <body>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Column1</th>
+                <th>Column2</th>
+                <th>Column3</th>
+            </tr>
+            <tr>
+                <td>data 0,0</td>
+                <td>data 0,1</td>
+                <td>data 0,2</td>
+            </tr>
+            <tr>
+                <td>data 1,0</td>
+                <td>span 1,1</td>
+                <td>data 1,2</td>
+            </tr>
+            <tr>
+                <td>data 2,0</td>
+                <td>data 2,1</td>
+                <td>data 2,2</td>
+            </tr>
+        </table>
+        <img src="https://rb.gy/8jjwvo" class="pic">
+    </div>
+    <div class="container2">
+        <p>Click to move elements</p>
+        <button class="button">Click</button>
+    </div>
+</body>
+</html>

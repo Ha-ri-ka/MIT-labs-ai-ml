@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>The jQuery Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.7.1.js"></script>
+    <!-- Checks if jQuery is loaded -->
+    <script>
+        window.onload = function() {
+            if (window.jQuery) {
+                console.log("Yes, jQuery is loaded.");
+            } else {
+                console.log("No, jQuery not loaded.");
+            }
+        }
+    </script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function() 
+        {
+            $("div").click(function () { alert("Hello, world!"); });
+        });
+    </script>
+</head>
+<body>
+    <div id="mydiv">
+        Click on this to see a dialogue box.
+    </div>
+</body>
+</html>

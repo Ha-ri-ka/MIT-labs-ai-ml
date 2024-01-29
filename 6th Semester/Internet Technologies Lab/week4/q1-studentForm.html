@@ -1,0 +1,95 @@
+<!--Design the student bio-data form using table.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student biodata form</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <style>
+        body{
+            font-size: larger;
+        }
+        h3{
+            text-align: center;
+        }
+        .form-container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(220, 30, 226, 0.13);
+        }
+        .ip-box{
+            background-color: rgba(220, 30, 226, 0.13);
+        }
+        .btn{
+            background-color: rgba(220, 30, 226, 0.13);
+            color: black;
+            border: gray;
+        }
+        .form{
+            margin-top: 50px;
+            display: inline-block;
+            width: 600px;
+        }
+        .subbtn{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            width: 80px;
+        }
+        .btn:hover{
+            background-color: rgba(219, 30, 226, 0.315);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <form class="form">
+        <h3>Student Details</h3>
+        <!-- Name -->
+        <div class="form-group">
+            <label for="name">Enter your name</label>
+            <input type="text" class="form-control ip-box" id="name">
+        </div>
+        <!-- Registration number -->
+        <div class="form-group">
+          <label for="regnum">Registration/roll number</label>
+          <input type="number" class="form-control ip-box" id="regnum">
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email ID</label>
+            <input type="email" class="form-control ip-box" id="email" placeholder="ex.name@learner.manipal.edu">
+          </div>
+          <!-- Library card -->
+          <p>Library card status</label>
+          <div class="form-group btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option1">Active
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2"> Inactive
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option3"> Cancelled
+                </label>
+            </div>
+            <!-- Suggestions -->
+            <div class="form-group">
+                <label class="form-label" for="textArea">Suggestions/concerns</label>
+                <textarea class="form-control ip-box" id="textArea" rows="2"></textarea>
+            </div>
+        <!-- checkbox -->
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="emailCheck">
+          <label class="form-check-label" for="emailCheck">Send me an email of my response</label>
+        </div>
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary subbtn">Submit</button>
+      </form>
+    </div>
+
+</body>
+</html>

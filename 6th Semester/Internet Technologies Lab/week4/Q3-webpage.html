@@ -1,0 +1,71 @@
+<!-- input groups, input, badges, buttons, button groups -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebPage Design</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <style>
+        .divContainer{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .top{
+            background-color: rgb(255, 255, 182);
+            display: flex;
+            min-height: 50vh;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 57px;
+        }
+        .text{
+            font-size: 50px;
+            text-align: center;
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            height: 50vh;
+        }
+        .right,.left,.middle{
+            flex: 1;
+            width: 100%;
+        }
+        .right{
+            background-color: rgb(255, 20, 147);
+        }
+        .middle{
+            background-color: rgb(218, 112, 214);
+        }
+        .left{
+            background-color: rgb(224, 176, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="divContainer">
+        <div class="top">
+           <pre class="text">GUIDE TO JOURNEY OF            
+          PROFESSIONAL WEB DEVELPOMENT
+           </pre>
+            <pre class="text"></pre>
+        </div>
+        <div class="bottom">
+            <div class="right">
+                <h3>FRONT-END DEV</h3>
+            </div>
+            <div class="middle">
+                <h3>BACK-END DEV</h3>
+            </div>
+            <div class="left">
+                <h3>FULL STACK</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

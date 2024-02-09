@@ -1,0 +1,25 @@
+Disease Prediction Based on Symptoms
+I. INTRODUCTION:
+The integration of Big Data Analytics in healthcare has revolutionized disease prediction. This project focuses on leveraging BDA techniques to predict diseases based on reported symptoms. By analyzing extensive datasets, including symptomatology, the aim is to construct predictive models for early detection and intervention, improving patient outcomes and enabling proactive healthcare measures.The integration of Big Data Analytics into healthcare has transformed disease prediction, yet mental health disorders remain challenging due to the abstract nature of symptoms and the need for comprehensive analysis. 
+This project addresses this gap by leveraging BDA techniques to predict mental health disorders based on patient symptoms. Despite the complexities involved, accurately recording and analyzing symptoms can lead to informed conclusions about a patient's mental health. 
+Our approach utilizes Decision Trees, Naive Bayes, and Random Forest classifiers, supported by PySpark for efficient data analysis and prediction. Recognizing the pivotal role of data in mental health, our project aims to provide valuable insights into patients' mental states, offering opportunities for improved accuracy and manageability in mental healthcare. 
+By harnessing big data technologies, we aim to unlock the full potential of data-driven approaches, paving the way for enhanced mental health diagnosis and treatment.
+
+II. LITERATURE REVIEW
+
+III. RESEARCH GAPS
+
+IV. OBJECTIVES
+1.  Analyse patient symptoms thoroughly and create an insightful medical record from their history. This helps doctors get a better understanding of the patient’s present health condition based on their past conditions/symptoms/behaviours.
+
+2. Make an accurate prediction based on synptoms and other lifestyle factors of patient. This can aid medical professionals in coming to a conclusive diagnosis.
+
+3. Help doctors draw a treatment plan and preventative care based on how the patient’s data changes with different medication and treatment methods. Doctors can use data to see how patient reacts to certain treatment plans as it reflects in their data.
+
+4. Build an interactive and easy to use user interface where patients/doctors can use the application by entering their symptoms and receiving analysis and predictions.
+
+V. REFERENCES
+[1]
+[2]
+[3]
+[4]

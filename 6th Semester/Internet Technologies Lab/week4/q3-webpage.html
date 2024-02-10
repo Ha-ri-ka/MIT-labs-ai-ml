@@ -1,0 +1,111 @@
+<!-- input groups, input, badges, buttons, button groups -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WebPage Design</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <style>
+        .divContainer{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .top{
+            background-color: rgb(255, 255, 182);
+            display: flex;
+            min-height: 50vh;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 57px;            
+        }
+        .text{
+            font-size: 50px;
+            text-align: center;
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            height: 50vh;
+        }
+        .right,.left,.middle{
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .right{
+            background-color: rgb(255, 20, 147);
+        }
+        .middle{
+            background-color: rgb(218, 112, 214);
+        }
+        .left{
+            background-color: rgb(224, 176, 255);
+        }
+        .image{
+            width: 200px;
+            height: 120px;
+            margin: 5px;
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="divContainer">
+        <div class="top">
+           <pre class="text" >GUIDE TO JOURNEY OF            
+          PROFESSIONAL WEB DEVELPOMENT
+           </pre>
+            <pre class="text"></pre>
+        </div>
+        <div class="bottom">
+            <div class="right">
+                <h3 style="text-align: center;">FRONT-END DEV</h3>
+                <div class="content">                
+                <a href="https://youtu.be/G3e-cpL7ofc?si=_bUqrqgH4Ld9EO3M" target="_blank"><img src="https://i.ytimg.com/vi/G3e-cpL7ofc/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCeCRIPYMkDqa-58AscpsxUVLUc4w" class="image"></a>
+                <button type="button" class="btn btn-outline-dark" onclick="location.href='https://youtu.be/G3e-cpL7ofc?si=_bUqrqgH4Ld9EO3M';">Start course</button>
+                </div>
+                <div class="content">
+                    <a href="https://youtu.be/Aj7HLsJenVg?si=KaJ1fDD4ZlqwcsYA" target="_blank"><img src="https://i.ytimg.com/vi/Aj7HLsJenVg/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAiY20WiZItdc79wm2BGtQxXQNECA" class="image"></a>
+                    <button type="button" class="btn btn-outline-dark" onclick="location.href='https://youtu.be/Aj7HLsJenVg?si=KaJ1fDD4ZlqwcsYA';">Start course</button>
+                </div>
+            </div>
+            <div class="middle">
+                <h3>BACK-END DEV</h3>
+                <div class="content">                
+                    <a href="https://youtu.be/ZxKM3DCV2kE?si=zDn1zuG_g7bdFvBf" target="_blank"><img src="https://i.ytimg.com/vi/ZxKM3DCV2kE/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCooslJYgn0QT7UbkH7K15APgDwBQ" class="image"></a>
+                    <button type="button" class="btn btn-outline-dark" onclick="location.href='https://youtu.be/ZxKM3DCV2kE?si=zDn1zuG_g7bdFvBf';">Start course</button>
+                    </div>
+                    <div class="content">
+                        <a href="https://youtu.be/jBzwzrDvZ18?si=URp48X5jSB7hbSRX" target="_blank"><img src="https://i.ytimg.com/vi/jBzwzrDvZ18/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDzdXWT7-jbNSBa1ySX9scrbBi_nA" class="image"></a>
+                        <button type="button" class="btn btn-outline-dark" onclick="location.href='https://youtu.be/jBzwzrDvZ18?si=URp48X5jSB7hbSRX';">Start course</button>
+                    </div>
+            </div>
+            <div class="left">
+                <h3>FULL STACK</h3>
+                <div class="content">
+                    <a href="https://youtu.be/nu_pCVPKzTk?si=KF4j7klwENOJav0R" target="_blank"><img src="https://i.ytimg.com/vi/nu_pCVPKzTk/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLACOsSv9qjNB3wx6t4d1L69vJs6SQ" class="image"></a>
+                    <button type="button" class="btn btn-outline-dark" onclick="location.href='https://youtu.be/nu_pCVPKzTk?si=KF4j7klwENOJav0R';">Start course</button>
+                </div>
+                <div class="content">                
+                    <a href="https://youtu.be/y99YgaQjgx4?si=k378R8zzw6S8bkfI" target="_blank"><img src="https://i.ytimg.com/vi/y99YgaQjgx4/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBcFw_y_WVTgtqhcYgBwi1Ycs0Eww" class="image"></a>
+                    <button type="button" class="btn btn-outline-dark" onclick="location.href='https://youtu.be/y99YgaQjgx4?si=k378R8zzw6S8bkfI';">Start course</button>
+                    </div>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+</html>

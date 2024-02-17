@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BIRTHDAY CARD</title>
+  <link rel="stylesheet" href="q3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="customize">
+            <!-- background color -->
+            <label for="colors">Choose background color</label>
+            <select id="colors" name="colors">
+                <option values="yellow">yellow</option> 
+                <option value="pink">pink</option>
+                <option value="blue">blue</option>
+                <option value="purple">purple</option>
+            </select>
+            <!-- font style -->
+            <label for="fonts">Choose Font</label>
+            <select id="fonts" name="fonts">
+                <option values="Georgia">Georgia</option> 
+                <option value="Verdana">Verdana</option>
+                <option value="Arial">Arial</option>
+                <option value="Garamond">Garamond</option>
+            </select>
+            <!-- font size -->
+            <label for="size">Enter font size</label>
+            <input type="number" id="size">
+            <!-- border style -->
+            <div class="radiobtn">
+                <p style="margin-bottom: 0;">Choose border style:</p>
+                <div>
+                    <input type="radio" id="None" name="border" value="None">
+                    <label for="none">none</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="solid" name="border" value="solid">
+                    <label for="solid">solid</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="double" name="border" value="other">
+                    <label for="double">double</label>
+                </div>
+            </div>
+            <!-- default picture -->
+            <div class="defaultPic">
+                <input type="checkbox" id="picChoice">
+                <label for="picChoice">Add default picture</label>
+            </div>
+            <!-- text area -->
+            <div class="message">
+                <label for="textarea">Enter card message here:</label><br>
+                <textarea class="txt"></textarea>
+            </div>
+            <!-- update button -->
+            <button class="update">UPDATE</button>
+
+        </div>
+        <div class="card">
+            <div class="displayMessage">
+                <p class="messageText">HAPPY BIRTHDAY</p>
+            </div>
+            <div>
+            <img src="https://i.pinimg.com/564x/41/58/41/415841420a524ddff557af85749ae820.jpg" class="picture">
+            </div>
+        </div>
+    </div>
+</body>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src="q3.js"></script>
+</html>

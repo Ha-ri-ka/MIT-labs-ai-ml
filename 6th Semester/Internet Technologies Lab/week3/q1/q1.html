@@ -1,44 +1,37 @@
-<!-- Write a web page which contains table with 3 X 3 dimensions (fill some data) and one
-image. Style the rows with alternate color. Move the table and image together from
-right to left when button is clicked. -->
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Q1-Table and Image.</title>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
-    <script type='text/javascript' src='jquery-3.7.1.js'></script>
-    <script src="q1.js"></script>
-    <link rel="stylesheet" href="q1.css">
-</head>
-    <body>
+  <title>MOVING TABLE</title>
+  <link rel="stylesheet" href="q1.css">
+  </head>
+<body>
     <div class="container">
-        <table>
-            <tr>
-                <th>Column1</th>
-                <th>Column2</th>
-                <th>Column3</th>
-            </tr>
-            <tr>
-                <td>data 0,0</td>
-                <td>data 0,1</td>
-                <td>data 0,2</td>
-            </tr>
-            <tr>
-                <td>data 1,0</td>
-                <td>span 1,1</td>
-                <td>data 1,2</td>
-            </tr>
-            <tr>
-                <td>data 2,0</td>
-                <td>data 2,1</td>
-                <td>data 2,2</td>
-            </tr>
-        </table>
-        <img src="https://rb.gy/8jjwvo" class="pic">
+    <table>
+        <tr class="odd">
+            <th>heading1</th>
+            <th>heading2</th>
+            <th>heading3</th>
+        </tr>
+        <tr class="eve">
+            <td>ele 1</td>
+            <td>ele 2</td>
+            <td>ele 3</td>
+        </tr>
+        <tr class="odd">
+            <td>ele 4</td>
+            <td>ele 5</td>
+            <td>ele 6</td>
+        </tr>
+        <tr class="eve">
+            <td>ele 7</td>
+            <td>ele 8</td>
+            <td>ele 9</td>
+        </tr>
+    </table>
+    <img src="https://i.pinimg.com/564x/a7/47/2f/a7472fa9d0ee3ee58bedbf031157cfee.jpg" class="pic">
     </div>
-    <div class="container2">
-        <p>Click to move elements</p>
-        <button class="button">Click</button>
-    </div>
+    <button class="btn">CLICK TO MOVE RIGHT</button>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+  <script src="q1.js"></script>
 </body>
 </html>

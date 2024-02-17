@@ -1,28 +1,22 @@
-table,th,td{
-    border:0.5px solid rgb(190, 21, 49);
-    border-spacing: 0px;
-}
 table{
     width: 300px;
-    margin: 30px;
+    height: 300px;
 }
-p{
-    display: inline-block;
+td,th{
+    border: 5px solid white;
 }
-button{
-    width: 60px;
-    height: 30px;
-    font-size: 18px;
-    background-color: pink;
-    border-radius: 10px;
-}
+.eve{
+    background-color: blue;
+} 
 .pic{
-    width: 250px;
-    height: 150px;
-    margin: 30px;
+    width: 300px;
+    height: 300px;
 }
 .container{
-    position: absolute;
-    margin-left: 0px;
     display: flex;
+    position: relative;
+}  
+.btn{
+    height: 40px;
+    margin-top: 40px;
 }

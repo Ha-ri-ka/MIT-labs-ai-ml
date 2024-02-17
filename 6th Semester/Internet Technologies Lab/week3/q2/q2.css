@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.customize,.card{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.customize{
+    background-color: rgb(241, 241, 146);
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+
+select{
+    width: 170px;
+    height: 25px;
+}
+
+label{
+    margin-top: 30px;
+}
+
+.defaultPic{
+    margin-top: 20px;
+}
+
+.message{
+    margin-top: 20px;
+    height: 60px;
+}
+.update{
+    margin-top: 20px;
+}
+.card{
+    background-color: yellow;
+    flex-direction: column;
+}
+.displayMessage,.picture{
+    flex: 1;
+}
+
+.displayMessage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.picture{
+    width: 400px;
+    height:400px;
+}

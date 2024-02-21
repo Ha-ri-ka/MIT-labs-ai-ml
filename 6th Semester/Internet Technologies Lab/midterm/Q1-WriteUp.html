@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>States and capitals</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+  <style>
+    .contain{
+        display: flex;    
+        align-items: center;
+        justify-content: center;    
+        margin-bottom: 20px;    
+    }   
+    p,button{
+        margin-right: 10px; 
+    }
+  </style>
+</head>
+<body style="padding: 50px;">
+    <div class="contain">
+        <p class="state1">Karnataka</p>
+        <button class="butn1 1  btn btn-secondary" onclick="showCapital('.cap1',1)">show capital</button>
+        <p class="cap1"></p>
+    </div>
+    <div class="contain">
+        <p class="state2">AP</p>
+        <button class="butn2 2 btn btn-secondary" onclick="showCapital('.cap2',2)">show capital</button>
+        <p class="cap2"></p>
+    </div>
+    <div class="contain">
+        <p class="state3">kerala</p>
+        <button class="butn3 3 btn btn-secondary" onclick="showCapital('.cap3',3)">show capital</button>
+        <p class="cap3"></p>
+    </div>
+    <div class="contain">
+        <p class="state4">tamil nadu</p>
+        <button class="butn4 4 btn btn-secondary" onclick="showCapital('.cap4',4)">show capital</button>
+        <p class="cap4"></p>
+    </div>
+    <div class="contain">
+        <p class="state5">telagana</p>
+        <button class="butn5 5 btn btn-secondary" onclick="showCapital('.cap5',5)">show capital</button>
+        <p class="cap5"></p>
+    </div>
+    <div class="contain">
+        <p class="state6">state</p>
+        <button class="butn6 6 btn btn-secondary" onclick="showCapital('.cap6',6)">show capital</button>
+        <p class="cap6"></p>
+    </div>
+    <div class="contain">
+        <p class="state7">state</p>
+        <button class="butn7 7 btn btn-secondary" onclick="showCapital('.cap7',7)">show capital</button>
+        <p class="cap7"></p>
+    </div>
+    <div class="contain">
+        <p class="state8">state</p>
+        <button class="butn8 8 btn btn-secondary" onclick="showCapital('.cap8',8)">show capital</button>
+        <p class="cap8"></p>
+    </div>
+    <div class="contain">
+        <p class="state9">state</p>
+        <button class="butn9 9 btn btn-secondary" onclick="showCapital('.cap9',9)">show capital</button>
+        <p class="cap9"></p>
+    </div>
+    <div class="contain">
+        <p class="state10">state</p>
+        <button class="butn10 10 btn btn-secondary" onclick="showCapital('.cap10',10)">show capital</button>
+        <p class="cap10"></p>
+    </div>
+  <script>  
+    var capitalList=["bangalore",'vijayawada','thiruvananthapuram','chennai','hyderabad','capital','capital','capital','capital','capital'];
+    function showCapital(className,ind){
+        document.querySelector(className).innerText=capitalList[ind-1];
+    }
+    var fontList = ["Arial", "Helvetica", "Times New Roman", "Georgia", "Courier New", "Verdana", "Lucida Console", "Impact", "Tahoma", "Trebuchet MS"];
+    var colorList = ["red", "blue", "green", "grey", "orange", "purple", "pink", "cyan", "magenta", "brown"];
+    var size=10;
+    for(i=1;i<=10;i++)
+    {
+        stateStr='.state'+i;
+        size=size+3;
+        document.querySelector(stateStr).style.color=colorList[i-1];
+        document.querySelector(stateStr).style.fontFamily=fontList[i-1];
+        document.querySelector(stateStr).style.fontSize=size+'px';
+        butnStr='.butn'+i;
+        document.querySelector(butnStr).style.backgroundColor=colorList[i-1];
+    }
+</script>
+</body>
+</html>

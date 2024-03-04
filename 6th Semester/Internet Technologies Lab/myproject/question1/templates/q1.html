@@ -1,0 +1,94 @@
+<!-- Create a web form which allows the teacher to enter the student details like name,
+date of birth, address, contact number, email id and marks of English, Physics and
+Chemistry. 
+After filling all the information and on clicking submit button, details
+should be added to a textarea displayed on the same page. Display the total
+percentage of marks obtained in a label. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student details form</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <style>
+        body{
+            font-size: larger;
+            background-color: rgba(220, 30, 226, 0.13);
+        }
+        h3{
+            text-align: center;
+        }
+        .form-container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .ip-box{
+            background-color: rgba(220, 30, 226, 0.13);
+        }
+        .btn{
+            background-color: rgba(220, 30, 226, 0.13);
+            color: black;
+            border: gray;
+        }
+        .form{
+            margin-top: 50px;
+            display: inline-block;
+            width: 600px;
+        }
+        .subbtn{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            width: 80px;
+        }
+        .btn:hover{
+            background-color: rgba(219, 30, 226, 0.315);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <form class="form" method="get" action="q1Output">
+        <h3>Student Details</h3>
+        <!-- Name -->
+        <div class="form-group">
+            <label for="name">Enter your name</label>
+            <input type="text" class="form-control ip-box" id="name" name="name">
+        </div>
+        <!-- Date of Birth -->
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" class="form-control ip-box" name="dob" id="dob">
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email ID</label>
+            <input type="email" class="form-control ip-box" id="email" name="email" placeholder="ex.name@learner.manipal.edu">
+          </div>
+          <!-- Address -->
+          <div class="form-group">
+            <label for="address">Enter your Address</label>
+            <input type="text" class="form-control ip-box" id="address" name="addrs">
+        </div>
+        <!-- contact number -->
+        <div class="form-group">
+            <label for="phoneNum">Contact number</label>
+            <input type="number" class="form-control ip-box" id="phoneNum" name="phoneNum">
+        </div>
+        <!-- marks in subjects -->
+        <div class="form-group">
+            <p style="text-align: center; margin-bottom: 0px; font-style: italic;">Enter marks out of 100</p>
+            <label for="engmarks">Marks in English</label>
+            <input type="number" class="form-control ip-box" id="engmarks" name="english">
+            <label for="phymarks">Marks in Physics</label>
+            <input type="number" class="form-control ip-box" id="phymarks" name="physics">
+            <label for="chemmarks">Marks in Chemistry</label>
+            <input type="number" class="form-control ip-box" id="chemmarks" name="chem">    
+        </div>
+        <button type="submit" class="btn btn-primary subbtn">Submit</button>
+      </form>
+    </div>
+</body>
+</html>

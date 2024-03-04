@@ -1,0 +1,67 @@
+<!-- Develop a web application using Django framework to demonstrate the transfer of 
+multiple parameters between web pages. User should be presented with a dropdown 
+list containing car manufacturers, a text box which takes model name of the 
+manufacturer and a submit button. On submitting the web page, the user is forwarded 
+to a new page. This new page should display the selected car manufacturer name and 
+the model name. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car chooser</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+  <style>
+    body{
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    .container{
+        top: 80px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .form-group{
+        margin: 20px;
+    }
+    .subbtn{
+        width: 150px;
+        font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+    <form method="get" action="carSelected">
+        <h1>Choose your car</h1>
+        <div class="form-group">
+            <label for="manufacturer">Select manufacturer</label>
+            <select id="manufacturer" name="manufacturer">
+                <option>Audi</option>
+                <option>BMW</option>
+                <option>Toyota</option>
+                <option>Honda</option>
+                <option>Ford</option>
+                <option>Nissan</option>
+                <option>Chevrolet</option>
+                <option>Mercedes-Benz</option>
+                <option>Subaru</option>
+                <option>Jeep</option>
+                <option>Volvo</option>
+            </select>
+            <div class="form-group">
+                <label for="model">Enter model name</label>
+                <input type="text" id="model" name="model">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary subbtn">Submit</button>
+            </div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

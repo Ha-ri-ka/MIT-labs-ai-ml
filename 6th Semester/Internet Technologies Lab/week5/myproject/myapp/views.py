@@ -9,9 +9,9 @@ def index(request):
         'age': 20,
         'nationality': 'indian'
     }
-    return render(request,'index.html',context)
+    return render(request,'myapp/templates/index.html',context)
 
 def counter(request):
     text=request.GET['text']
     numOfWords=len(text.split())
-    return render(request,'counter.html',{'numOfWords':numOfWords})
+    return render(request,'myapp/templates/counter.html',{'numOfWords':numOfWords})

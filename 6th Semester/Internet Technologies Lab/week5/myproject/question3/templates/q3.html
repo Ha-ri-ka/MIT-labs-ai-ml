@@ -7,7 +7,7 @@
 </head>
 <style>
     body{
-        margin-top: 50vh;
+        margin-top: 30vh;
         justify-content: center;
     }
     .container{
@@ -18,24 +18,62 @@
     .number{
         height: 100px;
         width: 80px;
-        font-size: larger;
+        font-size: 30px;
+        text-align: center;
+        margin: 15px;
     }
     .result{
         border: solid 1px black;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .operation{
+        height: 50px;
+        font-size: 30px;
+    }
+    .equal{
+        font-size: 30px;
     }
 </style>
 <body>
     <div class="container">
         <input type="text" class="num1 number">
-        <select>
+        <select class="operation">
             <option>+</option>
             <option>-</option>
             <option>*</option>
             <option>/</option>
         </select>
         <input type="text" class="num2 number">
-        <div>=</div>
+        <button class="equal" onclick="calculate()">=</button>
         <div class="result number"></div>
     </div>
 </body>
+<script>
+        function calculate()
+        {
+            var num1=parseFloat(document.querySelector(".num1").value);
+            var num2=parseFloat(document.querySelector(".num2").value);
+            var op=document.querySelector(".operation").value;
+            var result=document.querySelector(".result");
+            switch(op)
+            {
+                case "+":
+                    var res=num1+num2;
+                    break;
+                case "-":
+                var res=num1-num2;
+                    break;
+                case "*":
+                var res=num1*num2;
+                    break;
+                case "/":
+                var res=num1/num2;
+                    break;
+            }
+            result.innerHTML=res;
+            console.log(num1,num2,typeof(op));
+        }
+</script>
 </html>

@@ -1,4 +1,41 @@
-<!-- Develop a simple web page to perform basic arithmetic operations. Take two
-integer inputs from the user, select the operation to be performed using a
-dropdown. Include a button “Calculate” to perform the selected operation, and
-then display the result in the same web page. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    body{
+        margin-top: 50vh;
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .number{
+        height: 100px;
+        width: 80px;
+        font-size: larger;
+    }
+    .result{
+        border: solid 1px black;
+    }
+</style>
+<body>
+    <div class="container">
+        <input type="text" class="num1 number">
+        <select>
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+        <input type="text" class="num2 number">
+        <div>=</div>
+        <div class="result number"></div>
+    </div>
+</body>
+</html>

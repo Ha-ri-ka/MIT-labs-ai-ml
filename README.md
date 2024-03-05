@@ -8,6 +8,6 @@ CONSISTS:
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;MACHINE LEARNING (PYTHON)  
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;COMPUTER VISION (PYTHON)<br>
 &ensp;&ensp;&ensp;&ensp;6TH SEMESTER LABS:  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;INFORMATION TECHNOLOGY (HTML/CSS/JS/DJANGO)  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;DEEP LEARNING (PYTHON)  
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;BIG DATA ANALYTICS (PYTHON) 
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;INFORMATION TECHNOLOGY (HTML/CSS/JS/BOOTSTRAP/DJANGO)  
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;DEEP LEARNING (PYTHON/PYTORCH)  
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;BIG DATA ANALYTICS (PYTHON/PYSPARK) 

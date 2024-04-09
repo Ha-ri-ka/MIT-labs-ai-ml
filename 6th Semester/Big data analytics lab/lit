@@ -1,0 +1,33 @@
+1.
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8639195
+
+The paper presents a comprehensive approach to sentiment analysis of Twitter data using Apache Spark framework, focusing on handling the massive volume of tweets efficiently. It emphasizes the importance of preprocessing and machine learning techniques for accurate classification, comparing algorithms like Naïve Bayes, Logistic Regression, and Decision Trees. The study demonstrates improved classification results with Apache Spark, especially when scaling up the cluster size. By utilizing Spark's distributed processing capabilities, the proposed solution achieves better scalability and reduced processing time. Overall, the paper offers valuable insights into sentiment analysis techniques on big data platforms like Spark, highlighting its effectiveness and potential for real-time applications.The paper presents a comprehensive approach to sentiment analysis of Twitter data using Apache Spark framework, focusing on handling the massive volume of tweets efficiently. It emphasizes the importance of preprocessing and machine learning techniques for accurate classification, comparing algorithms like Naïve Bayes, Logistic Regression, and Decision Trees. The study demonstrates improved classification results with Apache Spark, especially when scaling up the cluster size. By utilizing Spark's distributed processing capabilities, the proposed solution achieves better scalability and reduced processing time. Overall, the paper offers valuable insights into sentiment analysis techniques on big data platforms like Spark, highlighting its effectiveness and potential for real-time applications.
+
+H. Elzayady, K. M. Badran and G. I. Salama, "Sentiment Analysis on Twitter Data using Apache Spark Framework," 2018 13th International Conference on Computer Engineering and Systems (ICCES), Cairo, Egypt, 2018, pp. 171-176, doi: 10.1109/ICCES.2018.8639195. keywords: {Sparks;Sentiment analysis;Machine learning;Big Data;Cluster computing;Twitter;Classification algorithms;Big Data;Apache Spark;Twitter;Sentiment Analysis;Text Classification;Machine Learning techniques},
+
+
+2.
+https://iopscience.iop.org/article/10.1088/1757-899X/1099/1/012002/pdf
+
+
+Apache Spark and Hadoop, focusing on comparison of machine learning algorithms and data visualization tools. It utilizes datasets from Stanford University and Twitter API, employing techniques like logistic regression and random forest classifier for sentiment analysis, and Power BI and Tableau for tweet analysis visualization. The study demonstrates the effectiveness of logistic regression over random forest classifier in sentiment analysis, while also comparing the user-friendliness of Power BI and Tableau. Future work suggests integration with Spark NLP for natural language processing tasks. Overall, the paper provides valuable insights into big data analysis methodologies and tools, offering potential for real-world applications and further research avenues.
+OP Conference Series: Materials Science and Engineering, Volume 1099, International Conference on Applied Scientific Computational Intelligence using Data Science (ASCI 2020) 22nd-23rd December 2020, Jaipur, India
+Citation Sujala D Shetty 2021 IOP Conf. Ser.: Mater. Sci. Eng. 1099 012002
+
+
+
+3.
+https://annalsofrscb.ro/index.php/journal/article/view/4269
+
+The academic paper titled "Sentiment Analysis for E-Commerce Products Using Natural Language Processing" explores the application of PySpark and Spark NLP for real-time sentiment analysis in the e-commerce sector. It discusses the challenges of analyzing consumer attitudes towards products and services and proposes a solution that involves data collection, preprocessing, sentiment sentence extraction, and feature selection using Spark NLP. The paper presents results demonstrating the effectiveness of the proposed approach in terms of scalability and distributed processing, with an accuracy level of 90% to 93%. It concludes by highlighting the importance of leveraging advanced technologies for efficient sentiment analysis in e-commerce.
+
+Bineet Kumar Jha, Sivasankari G. G., Venugopal K. R. (2021). Sentiment Analysis for E-Commerce Products Using Natural Language Processing. Annals of the Romanian Society for Cell Biology, 166–175. Retrieved from https://annalsofrscb.ro/index.php/journal/article/view/4269
+
+4.
+https://ieeexplore.ieee.org/abstract/document/9478145
+The paper "Machine Learning based Sentiment Analysis of Coronavirus Disease Related Twitter Data" presented at the 2021 Second International Conference on Secure Cyber Computing and Communication (ICSCCC) addresses the need for sentiment analysis amidst the COVID-19 pandemic by extracting sentiments from real-time tweets and text from images or videos. The study employs PySpark for scalable stream processing and evaluates various classification algorithms, with logistic regression showing the highest accuracy and F-score. Results indicate logistic regression as the preferred model for sentiment analysis, facilitating insights into public sentiment during the pandemic for effective decision-making. Future work may explore multilingual analysis, handling complex textual nuances, and incorporating sentiment from visuals.
+
+H. Krishnan, P. G, A. Poosari, A. Jayaraj, C. Thomas and G. M. Joy, "Machine Learning based Sentiment Analysis of Coronavirus Disease Related Twitter Data," 2021 2nd International Conference on Secure Cyber Computing and Communications (ICSCCC), Jalandhar, India, 2021, pp. 459-464, doi: 10.1109/ICSCCC51823.2021.9478145. keywords: {COVID-19;Sentiment analysis;Social networking (online);Pandemics;Computational modeling;Streaming media;Real-time systems;Sentiment analysis;logistic regression;COVID;Twitter},
+
+Hi donkey 
+

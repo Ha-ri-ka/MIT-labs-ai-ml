@@ -1,6 +1,6 @@
-1) Demonstrate how to load a dataset suitable for recommendation systems into a PySpark 
-DataFrame.
-2) Implement a PySpark script that splits the data and trains a recommendation model.
-3) Implement a PySpark script using the ALS algorithm for collaborative filtering.
-4) Implement code to evaluate the performance of the recommendation model using 
-appropriate metrics.
+1) Develop a PySpark script to clean and preprocess data before performing entity resolution. 
+Include steps like tokenization and normalization.
+2) Implement a PySpark program that computes similarity scores between records using a 
+chosen similarity metric.
+3) Implement a PySpark program to evaluate the precision, recall, and F1-score of an entity 
+resolution model

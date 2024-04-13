@@ -1,0 +1,52 @@
+<!-- Create a page firstPage.html with two TextBoxes [Name, Roll], DropDownList 
+[Subjects], and a button. Create another page secondPage.html with a label and a 
+button. When the user clicks the button in first Page, he should be sent to the second 
+page and display the contents passed from first page in the label. The button in second 
+page should navigate the user back to firstPage. Use Django sessions to transfer 
+information. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 1</title>
+  <style>   
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30vh;
+    }
+    div,input,option,select,button{
+        margin-bottom: 50px;
+        font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+    <form method="POST" action="page2">
+        {% csrf_token %}
+        <div>
+            <label for="username">Enter your name:</label>
+            <input type="text" name="username" id="username">
+        </div>
+        <div>
+            <label for="roll">Enter your roll number:</label>
+            <input type="text" name="roll" id="roll">
+        </div>
+        <div>
+            <label for="subject">Select subject:</label>
+            <select id="subject" name="subject">
+                <option>--subject--</option>
+                <option>Machine Learning</option>
+                <option>Desgin and analysis of algorithms</option>
+                <option>Computer vision</option>
+                <option>Data structures</option>
+                <option>Artifical neural networks</option>
+                <option>Deep Learning</option>
+                <option>Big data analytics</option>
+                <option>Object oriented programming</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

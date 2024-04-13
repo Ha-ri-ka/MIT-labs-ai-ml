@@ -1,0 +1,46 @@
+<!-- 3) Create a Register page and Success page with the following requirements: 
+i. Register page should contain four input TextBoxes for UserName, Password, 
+Email id and Contact Number and also a button to submit. Make the username as 
+compulsory field and other fields as optional. 
+ii. On button click, Success page is displayed with message "Welcome 
+{UserName}" and also his Email and Contact Number has to be displayed. 
+iii. Use secure technique to send details to the Success page -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration page</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+  <style>
+        body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30vh;
+        }   
+  </style>
+</head>
+<body>
+    <form method="POST" action="success">
+        {% csrf_token %}
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Username"  aria-label="Username" aria-describedby="basic-addon1" name='username' required>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon2">password</span>
+            <input type="password" class="form-control" placeholder="Password"  aria-label="Password" aria-describedby="basic-addon2" name='password' required>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon3">email</span>
+            <input type="text" class="form-control" placeholder="Email ID"  aria-label="email" aria-describedby="basic-addon3" name='email'>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon4">Phone Number</span>
+            <input type="text" class="form-control" placeholder="phone number"  aria-label="phone" aria-describedby="basic-addon4" name="phone">
+        </div>
+        <button type="submmit" class="btn btn-secondary">Submit</button>
+    </form>
+</body>
+</html>

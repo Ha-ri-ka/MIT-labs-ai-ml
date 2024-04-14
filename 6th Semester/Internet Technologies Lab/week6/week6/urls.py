@@ -23,4 +23,5 @@ urlpatterns = [
     path('question1/',include('question1.urls')),
     path('question2/',include('question2.urls')),
     path('question3/',include('question3.urls')),
+    path('question4/',include('question4.urls')),
 ]

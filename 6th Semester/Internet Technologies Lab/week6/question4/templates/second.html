@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bill</title>
+  <style>   </style>
+</head>
+<body>
+    <h1>Final Bill</h1>
+    <h2><i>prices: 50 rupees per phone, 100 rupees per laptop</i></h2>
+        <h3>Brand: {{ brand }}</h3>
+        {% if phone_cost %}
+            <h3>Phone Cost: {{ph_quant}}*50 = {{ phone_cost }}</h3>
+        {% endif %}
+        {% if laptop_cost %}
+            <h3>Laptop Cost: {{lp_quant}}*100 = {{ laptop_cost }}</h3>
+        {% endif %}
+    <h3>total cost: {{total}}</h3>
+</body>
+</html>

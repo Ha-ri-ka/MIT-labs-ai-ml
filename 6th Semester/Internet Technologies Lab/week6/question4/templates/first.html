@@ -1,0 +1,70 @@
+<!-- 4) Design a website with two pages. 
+First page contains: 
+RadioButton with HP, Nokia, Samsung, Motorola, Apple as options. 
+CheckBox with Mobile and Laptop as items. TextBox 
+to enter quantity. 
+There is a button with text as "Produce Bill". 
+On Clicking Produce Bill button, item should be displayed with total amount on another page.  -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+  <style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+  </style>
+</head>
+<body>
+    <form method="post" action="second">
+        {% csrf_token %}
+        <p>Choose a brand</p>
+        <div>
+            <input type="radio" class="btn-check" name="options" id="hp" value='hp' checked>
+            <label class="btn btn-dark" for="hp">HP</label>
+        </div>
+        <div>
+            <input type="radio" class="btn-check" name="options" id="nokia" value='nokia'>
+            <label class="btn btn-dark" for="nokia">nokia</label>
+        </div>
+        <div>
+            <input type="radio" class="btn-check" name="options" id="samsung" value='samsung'>
+            <label class="btn btn-dark" for="samsung">samsung</label>
+        </div>
+        <div>
+            <input type="radio" class="btn-check" name="options" id="moto" value='Motorola'>
+            <label class="btn btn-dark" for="moto">Motorola</label>
+        </div>
+        <div>
+            <input type="radio" class="btn-check" name="options" id="apple" value="apple">
+            <label class="btn btn-dark" for="apple">apple</label>
+        </div>
+        <div>
+        <p>choose Product type</p>
+        
+            <div>
+                <input type="checkbox" class="btn-check" id="phone" name="phones">
+                <label class="btn" for="phone">Phones</label>
+                <label>enter quantity</label>
+                <input type="number" name="phone-quantity" style="width: 50px;">
+            </div>
+
+            <div>
+                <input type="checkbox" class="btn-check" id="laptop" name="laptops">
+                <label class="btn" for="laptop">Laptops</label>
+                <label>enter quantity</label>
+                <input type="number" name="laptop-quantity" style="width: 50px;">
+            </div>
+
+        </div>
+        <div>
+        </div>
+        <button type="submit" style="margin-top: 20px" class="btn btn-secondary">Produce Bill</button>
+    </form>
+</body>
+</html>

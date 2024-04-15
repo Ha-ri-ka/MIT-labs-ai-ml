@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Model intro</title>
+  <style>   </style>
+</head>
+<body>
+  {% for feature in features %}
+  <p>------------------id no. {{feature.id}}--------------</p>
+    {{feature.id}}
+    {{feature.name}}
+    {{feature.details}}
+    {% endfor %}
+
+    {% if feature.name == 'WHAT' %}
+    <p>ANOTHER NAME BITCH</p>
+    {% endif %}
+
+    <!-- {% if feature.is_true == True %}
+    and she is NOT lying
+    {% else %} 
+    can use elif also
+    and she a LIAAAARRRR
+    {% endif %}
+
+    <p>------------------feature 2--------------</p>
+    {{feature2.id}}
+    {{feature2.name}}
+    {{feature2.details}} -->
+  <script>  </script>
+</body>
+</html>

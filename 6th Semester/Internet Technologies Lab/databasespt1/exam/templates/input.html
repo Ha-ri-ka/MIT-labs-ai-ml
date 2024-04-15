@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calorie counter</title>
+  <style>   </style>
+</head>
+<body>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <input type="checkbox" name="banana" value="banana">banana
+        <input type="checkbox" name="apple" value="apple">apple
+        <input type="checkbox" name="pizza" value="pizza">pizza
+        <input type="checkbox" name="potato" value="potato">potato
+        <button type="submit">GET CALORIES</button>
+    </form>
+</body>
+</html>

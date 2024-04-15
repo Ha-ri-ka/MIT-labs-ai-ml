@@ -1,0 +1,69 @@
+<!-- 2. Consider the following tables: 
+WORKS(person-name,Company-name,Salary) 
+LIVES(Person_name, Street, City) 
+Assume Table data suitably. Design a Django webpage and include an option to 
+insert data into WORKS table by accepting data from the user using TextBoxes. 
+Also, include an option to retrieve the names of people who work for a 
+particular company along with the cities they live in (particular company name 
+must be accepted from the user).  -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>question 2</title>
+  <style>   
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+    }
+    div{
+        margin: 20px;
+    }
+    input{
+        height: 35px;
+    }
+  </style>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <p>Fill work details: </p>
+        <div>
+            <label for="name">enter name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="comp_name">enter company name</label>
+            <input type="text" name="comp_name" id="comp_name">
+        </div>
+        <div>
+            <label for="salary">enter salary</label>
+            <input type="number" name="salary" id="salary">
+        </div>
+        <p>Fill residential details:</p>
+        <div>
+            <label for="street">enter street name</label>
+            <input type="text" name="street" id="street">
+        </div>
+        <div>
+            <label for="city">enter city name</label>
+            <input type="text" name="city" id="city">
+        </div>
+        <div>
+            <button type="submit" style="font-size: 25px;">Submit</button>
+        </div>
+    </form>
+
+    <form method="POST" action="{% url 'find_employee' %}">
+        {% csrf_token %}
+        <div>
+            <label for="keycomp">enter company of employee</label>
+            <input type="text" name="key" id="keycomp">
+        </div>
+        <div>
+            <button type="submit" style="font-size: 25px;">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
